@@ -11,8 +11,8 @@ const App = React.createClass({
       <div className='container'>
         <Title />
         <Square />
-        {['gray', 'yellow', 'black'].map((color) => (
-          <Square key={color} color={color}/>
+        {['gray', 'yellow', 'gray'].map((color, index) => (
+          <Square key={index} color={color}/>
         ))}
       </div>
     )
